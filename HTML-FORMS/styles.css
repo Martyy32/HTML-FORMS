@@ -1,0 +1,165 @@
+/*this is for border box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+/*Web configs*/
+}
+body {
+    color:  black;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Header specs*/
+.speaker-form-header {
+    text-align: center;
+    background-color: rgb(248, 178, 86);
+    border: 1px solid black;
+    border-radius: 15px;
+
+    width: 80%;
+    margin: 40px 0;
+    padding: 50px;
+}
+
+/*Header text config*/
+.speaker-form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*main form*/
+.speaker-form {
+    background-color: rgb(248, 178, 86);
+    border: 1px solid black;
+    border-radius: 15px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*full name Input box config*/
+.form-row input[type="text"],
+.form-row input[type="email"]{
+    background-color: rgb(248, 178, 86);
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.form-row label {
+    margin-bottom: 16px;
+}
+
+/*Choises config*/
+.legacy-form-row { 
+    border: none;
+    margin-bottom: 40pc;
+}
+
+.legacy-form-row legend {
+    margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+    display: block;
+    font-size: 15;
+    padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input [type="radio"] {
+    margin-top: 2px;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type="radio"] {
+    float: left;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+    background-color: blue;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76AEED;
+}
+
+.form-row button:active {
+    background-color: #407fcf;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .speaker-form-header,
+    .speaker-form {
+        width: 600px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select,
+.form-row textarea {
+    width: 300px;
+    height: initial;
+}
+
+.form-row label { 
+    text-align: right;
+    width: 150px;
+    margin-top: 7px;
+    padding-right: 20px;
+}
+
+.legacy-form-row {
+    margin-bottom: 10px;
+}
+
+.legacy-form-row legend {
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.legacy-form-row legend {
+    float: left;
+}
+.form-row button {
+    margin-left: 170px;
+}
+}
